@@ -1,0 +1,66 @@
+/* VARIÁVEIS GLOBAIS */
+
+:root {
+  --cor-fundo: #f5f6f7;
+  --cor-branco: #ffffff;
+  --cor-azul: #779fca;
+  --cor-azul-escuro: #35465c;
+  --cor-texto: #252d38;
+  --cor-texto-secundario: #737d89;
+  --cor-borda: #e5e8ec;
+
+  --fonte-principal: var(--font-dm-sans);
+  --fonte-titulos: var(--font-manrope);
+}
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: var(--fonte-principal), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+
+::selection {
+  background-color: var(--cor-azul);
+  color: var(--cor-branco);
+}
+
+.container {
+  width: min(1120px, 90%);
+  margin: 0 auto;
+}
+
+.titulo-secao {
+  font-family: var(--fonte-titulos), sans-serif;
+  color: var(--cor-azul-escuro);
+  font-weight: 700;
+}

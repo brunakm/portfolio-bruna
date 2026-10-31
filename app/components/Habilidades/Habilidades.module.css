@@ -1,0 +1,150 @@
+.habilidades {
+  background-color: var(--cor-fundo);
+  padding: 110px 0;
+}
+
+.container {
+  width: min(1120px, 90%);
+  margin: 0 auto;
+}
+
+/* Cabeçalho da seção */
+
+.cabecalho {
+  max-width: 650px;
+  margin-bottom: 55px;
+}
+
+.etiqueta {
+  display: inline-block;
+  color: var(--cor-azul);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+}
+
+.cabecalho h2 {
+  font-family: var(--fonte-titulos);
+  font-size: clamp(32px, 4vw, 43px);
+  line-height: 1.25;
+  letter-spacing: -1.5px;
+  color: var(--cor-azul-escuro);
+  margin-bottom: 20px;
+}
+
+.cabecalho h2 span {
+  color: var(--cor-azul);
+}
+
+.cabecalho p {
+  color: var(--cor-texto-secundario);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* Grade de cartões */
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* Cartões */
+
+.card {
+  background-color: var(--cor-branco);
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  padding: 32px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(53, 70, 92, 0.07);
+}
+
+.numero {
+  display: inline-block;
+  font-family: var(--fonte-titulos);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--cor-azul);
+  margin-bottom: 22px;
+}
+
+.card h3 {
+  font-family: var(--fonte-titulos);
+  font-size: 19px;
+  color: var(--cor-azul-escuro);
+  margin-bottom: 12px;
+}
+
+.descricao {
+  color: var(--cor-texto-secundario);
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+/* Etiquetas de tecnologias */
+
+.tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 8px 13px;
+  border-radius: 5px;
+
+  background-color: #edf2f7;
+  color: var(--cor-azul-escuro);
+
+  font-size: 12px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.tag:hover {
+  background-color: var(--cor-azul-escuro);
+  color: var(--cor-branco);
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+  .habilidades {
+    padding: 80px 0;
+  }
+
+  .grade {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .cabecalho {
+    margin-bottom: 38px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 25px;
+  }
+
+  .card h3 {
+    font-size: 17px;
+  }
+
+  .tag {
+    font-size: 11px;
+    padding: 7px 11px;
+  }
+}

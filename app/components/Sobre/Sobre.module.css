@@ -1,0 +1,146 @@
+.sobre {
+  background-color: var(--cor-branco);
+  padding: 110px 0;
+}
+
+.container {
+  width: min(1120px, 90%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 90px;
+}
+
+/* Conteúdo */
+
+.conteudo {
+  max-width: 620px;
+}
+
+.etiqueta {
+  display: inline-block;
+  color: var(--cor-azul);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+}
+
+.conteudo h2 {
+  font-family: var(--fonte-titulos);
+  font-size: clamp(32px, 4vw, 43px);
+  line-height: 1.25;
+  letter-spacing: -1.5px;
+  color: var(--cor-azul-escuro);
+  margin-bottom: 28px;
+}
+
+.conteudo h2 span {
+  color: var(--cor-azul);
+}
+
+.conteudo p {
+  color: var(--cor-texto-secundario);
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+/* Cartões */
+
+.destaques {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+
+  padding: 28px;
+  background-color: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(53, 70, 92, 0.08);
+}
+
+.icone {
+  min-width: 48px;
+  height: 48px;
+  background-color: #e3ebf4;
+  border-radius: 6px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icone span {
+  color: var(--cor-azul-escuro);
+  font-family: var(--fonte-titulos);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.card h3 {
+  font-family: var(--fonte-titulos);
+  font-size: 17px;
+  color: var(--cor-azul-escuro);
+  margin-bottom: 9px;
+}
+
+.card p {
+  color: var(--cor-texto);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.detalhe {
+  color: var(--cor-texto-secundario);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+  .sobre {
+    padding: 80px 0;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .conteudo {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 22px;
+    gap: 15px;
+  }
+
+  .icone {
+    min-width: 42px;
+    height: 42px;
+  }
+
+  .card h3 {
+    font-size: 15px;
+  }
+}
