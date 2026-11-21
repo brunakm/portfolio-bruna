@@ -17,7 +17,7 @@ export default function Apresentacao() {
           <h2>
             Desenvolvedora Front-End
             <br />
-            e Web Designer em formação.
+            e Web Designer.
           </h2>
 
           <p>

@@ -9,7 +9,6 @@
 }
 
 /* Cabeçalho */
-
 .cabecalho {
   max-width: 700px;
   margin-bottom: 55px;
@@ -44,7 +43,6 @@
 }
 
 /* Grade */
-
 .grade {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -52,7 +50,6 @@
 }
 
 /* Cartões */
-
 .card {
   background-color: var(--cor-branco);
   border: 1px solid var(--cor-borda);
@@ -68,7 +65,6 @@
 }
 
 /* Imagens */
-
 .imagemContainer {
   height: 240px;
   background-color: #e9eef3;
@@ -102,7 +98,6 @@
 }
 
 /* Conteúdo */
-
 .conteudo {
   padding: 27px;
 }
@@ -130,7 +125,6 @@
 }
 
 /* Tecnologias */
-
 .tecnologias {
   display: flex;
   flex-wrap: wrap;
@@ -148,6 +142,12 @@
 }
 
 /* Link */
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
 
 .link {
   display: inline-block;
@@ -164,7 +164,6 @@
 }
 
 /* Responsividade */
-
 @media (max-width: 768px) {
   .projetos {
     padding: 80px 0;

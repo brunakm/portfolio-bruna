@@ -11,6 +11,7 @@ const projetos = [
     tecnologias: ["HTML", "CSS", "Sass"],
     imagem: "/projetos/agencia-criativa.png",
     github: "https://github.com/brunakm/agencia-criativa-web",
+    demo: "https://agencia-criativa-web-jet.vercel.app/",
   },
 
   {
@@ -22,6 +23,7 @@ const projetos = [
     tecnologias: ["HTML", "CSS", "Bootstrap"],
     imagem: "/projetos/barbearia.png",
     github: "https://github.com/brunakm/barbearia-estilo-livre",
+    demo: "https://barbearia-estilo-livre-nine.vercel.app/",
   },
 
   {
@@ -33,6 +35,7 @@ const projetos = [
     tecnologias: ["HTML", "CSS", "Bootstrap", "Tailwind"],
     imagem: "/projetos/petstyle.png",
     github: "https://github.com/brunakm/petstyle-loja-virtual",
+    demo: "https://petstyle-loja-virtual-lac.vercel.app",
   },
 
   {
@@ -44,6 +47,7 @@ const projetos = [
     tecnologias: ["React", "Vite", "Context API"],
     imagem: "/projetos/todo-list.png",
     github: "https://github.com/brunakm/todo-list",
+    demo: "https://todo-list-woad-nine.vercel.app",
   },
 
   {
@@ -55,6 +59,7 @@ const projetos = [
     tecnologias: ["Next.js", "TypeScript", "CSS Modules"],
     imagem: "/projetos/portal-viagens.png",
     github: "https://github.com/brunakm/portal-viagens",
+    demo: "https://portal-viagens-theta.vercel.app",
   },
   
   {
@@ -66,6 +71,7 @@ const projetos = [
     tecnologias: ["React", "TypeScript", "Axios"],
     imagem: "/projetos/catalogo-livros.png",
     github: "https://github.com/brunakm/catalogo-livros",
+    demo: "https://catalogo-livros-iota.vercel.app",
   },
 ];
 
@@ -128,15 +134,29 @@ export default function Projetos() {
                   ))}
                 </div>
 
-                <a
-                  href={projeto.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.link}
-                >
-                  Ver no GitHub
-                  <span aria-hidden="true"> ↗</span>
-                </a>
+                <div className={styles.links}>
+                  {projeto.demo && (
+                    <a
+                      href={projeto.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.link}
+                    >
+                      Ver projeto
+                      <span aria-hidden="true"> ↗</span>
+                    </a>
+                  )}
+
+                  <a
+                    href={projeto.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.link}
+                  >
+                    Ver no GitHub
+                    <span aria-hidden="true"> ↗</span>
+                  </a>
+                </div>
               </div>
             </article>
           ))}
